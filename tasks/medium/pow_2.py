@@ -13,7 +13,12 @@ is_pow_2(17) -> False
 
 
 def is_pow_2(number) -> bool:
-    return None
+    from math import log
+    Logn = log(number, 2)
+    if Logn == int(Logn):
+        return True
+    else:
+        return False
 
 
 if __name__ == '__main__':

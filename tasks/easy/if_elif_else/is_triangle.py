@@ -17,8 +17,14 @@ is_rectangle(10, 4, 5) -> False
 
 
 def is_triangle(side1: int, side2: int, side3: int) -> bool:
-    result = None
-    return result
+    if side1 + side2 < side3:
+        return False
+    elif side1 + side3 < side2:
+        return False
+    elif side2 + side3 < side1:
+        return False
+    else:
+        return True
 
 
 if __name__ == '__main__':
