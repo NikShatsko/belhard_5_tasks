@@ -34,4 +34,3 @@ if __name__ == '__main__':
     except ValueError as exc:
         print(exc)
         print("Все элементы списка должны быть целыми числами")
-
